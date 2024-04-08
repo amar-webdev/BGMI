@@ -1,0 +1,136 @@
+
+body , html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.header {
+    background-color: #000;
+    display: flex; /* Use flexbox to align items */
+    align-items: center; /* Align items to the top */
+    padding-top: 10px;
+}
+
+.logo {
+    width: 10%;
+    height: 50px;
+    padding-left: 30px;
+    box-sizing: border-box 
+}
+.menu ul{
+    display: flex;
+    list-style: none;
+    margin: 0;
+    
+}
+
+.menu li{
+    padding-left: 10px;
+    margin: 0 10px;
+    box-sizing: border-box;
+}
+
+.menu li a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+}
+
+.menu li a:hover{
+    text-decoration: underline;
+}
+
+a.icons {
+    padding-left: 10px;
+    color: #fff;
+    height: 10px;
+    width: 10px;
+}
+
+.span-1 {
+    background: #eca800;
+    color: #333;
+    padding: 0 24px;
+    cursor: pointer;
+    height: 40px;
+    border-right: solid 1px black;
+    box-sizing: border-box;
+
+} 
+
+.span-2 {
+    background: #e2ad0d;
+    box-sizing: border-box;
+    color: #333;
+    padding: 0 24px;
+    cursor: pointer;
+}
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    
+}
+#bg-video {
+    position: absolute; 
+    top: 0;
+    left: 0;
+    width: 100%;
+    object-fit: cover; /* Ensure the video covers the entire header */
+    z-index: -1; /* Place the video behind other content */
+}
+
+.content h1 {
+    font-size: 50px;
+    font-weight: 900;
+    margin: 0;
+    color: #eca800;
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5); /* Add a 3D-like shadow */
+}
+.content p {
+    font-size: 20px;
+    font-weight: 800;
+    margin: 0;
+    text-shadow: 2px 2px 2px #fff;
+    color: #000;
+}
+.clock {
+    text-align: center;
+    font-size: 36px;
+    margin-top: 50px;
+}
+.content span {
+    display: flex;
+    align-items: flex-end;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding-left: 10px;
+    margin: 0;
+}
+
+/* ----------------------------items------------------------------- */
+
+.team-container {
+    display: flex;
+    flex-wrap: nowrap;
+    margin: 40px;
+    padding: 10px;
+    justify-content: space-evenly;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 1px 0px 1px 1px rgb(65, 50, 57);
+}
+
+.iteam-text {
+    background-color: #e2ad0d;
+    padding: 10px;
+    font-weight: 800;
+}
+.iteam-img img {
+    height: 200px;
+    width: 400px;
+}

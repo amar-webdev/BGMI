@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BGMI CLONE SITE</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+    <div class="main-container">
+        <div class="header">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="https://www.battlegroundsmobileindia.com/common/img/common/logo.png" alt="logo">
+                </a>
+            </div>
+            <div class="menu">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="News.html">News</a></li>
+                    <li><a href="REDEEM.html">REDEEM</a></li>
+                    <li><a href="SUPPORT.html">SUPPORT</a></li>
+                    <li><a href="GAME RESPONSIBLY.html">GAME RESPONSIBLY</a></li>
+
+                    <!-- icons -->
+                    
+                    <li><a class="icons" href="Facebook.html">
+                    <i class="fa-brands fa-facebook-f"></i></a> </li>
+                    <li><a class="icons" href="instagram.html">
+                    <i class="fa-brands fa-instagram"></i></a></li>
+                    <li><a class="icons" href="youtube.html">
+                    <i class="fa-brands fa-youtube"></i></a></li>
+
+                    <span class="span-1">IOS DOWNLOAD</span>
+                    <span class="span-2">AOS DOWNLOAD</span>
+                    <li><a class="icons" href="youtube.html">
+                    <i class="fa-solid fa-cart-shopping"></i></a></li>
+                </ul>
+        <div>
+            
+        </div>
+           </div>
+        </div>
+        <div class="content">
+            <video autoplay muted loop id="bg-video">
+                <source src="https://www.battlegroundsmobileindia.com/common/video/pre2.webm?autoplay=1&loop=1&autopause=0" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+           <h1> BGMI NEW EVENT</h1>
+           <p>choose and collect your rewards in this event</p>
+           <span><i class="fa-solid fa-angle-right"></i>Rewards will be availabe untill 
+            <span class="clock">
+                <p id="time"></p>
+            </span></span>
+
+                        <!-- iteam -->
+            </div>
+            <div>
+                <div class="team-container">
+                    <div class="iteam">
+                        <div class="iteam-img">
+                            <img src="https://lh3.googleusercontent.com/proxy/xmbnjLtC4oavdp1euiykixH_0kUD_2enxSH5cYJQKv_IwGZXyb9no43JZUv_rwNoWsTLWwOYlolY3kLyuZl-Xuw_N2_SFQbNu0FPAn2aK-p6kgW0DPBYilg8faNEeuB0YJ7EyVvQXuwIu8GEsnHXzgNCdpAt" alt="team">
+                        </div>
+                        <div class="iteam-text">
+                            <h3>COLLECT</h3> 
+                        </div>
+                    </div>
+                
+                    <!-- Repeat the above structure for each team item -->
+                    <div class="iteam">
+                        <div class="iteam-img">
+                            <img src="https://bgmiskins.com/wp-content/uploads/2020/07/Glacier-M416.png" alt="team">
+                        </div>
+                        <div class="iteam-text">
+                            <h3>COLLECT</h3> 
+                        </div>
+                    </div>
+
+                    <div class="iteam">
+                        <div class="iteam-img">
+                            <img src="https://assets.mspimages.in/gear/wp-content/uploads/2023/09/bgmi-valkyrie-696x365.jpg" alt="team">
+                        </div>
+                        <div class="iteam-text">
+                            <h3>COLLECT</h3> 
+                        </div>
+                    </div>
+                
+                    <!-- Repeat the structure for other team items -->
+                </div>
+
+                
+            </div>
+        </div>
+    </div>
+    <script>
+        function updateClock() {
+    var now = new Date();
+    var hours = now.getHours();
+    var minutes = now.getMinutes();
+    var seconds = now.getSeconds();
+
+    // Ensure two digits for hours, minutes, and seconds
+    hours = ('0' + hours).slice(-2);
+    minutes = ('0' + minutes).slice(-2);
+    seconds = ('0' + seconds).slice(-2);
+
+    // Display the time in 'hh:mm:ss' format
+    var timeString = hours + ':' + minutes + ':' + seconds;
+    
+    // Update the time in the HTML
+    document.getElementById('time').textContent = timeString;
+}
+
+// Update the clock every second
+setInterval(updateClock, 1000);
+
+// Initialize the clock immediately upon page load
+updateClock();
+
+    </script>
+</body>
+</html>
