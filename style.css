@@ -181,4 +181,8 @@ span {
     margin: 0;
     background-color: #e2ad0d;
 }
+.team-container {
+    margin-top: 10px;
+    box-shadow: none;
+}
 }
